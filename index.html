@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Título Tentativo | Portafolio</title>
+  <!-- Fuentes Dreamy & Elegantes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Iconos para Redes Sociales -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <div class="icon-sparkle-wrapper">
+        <img src="https://via.placeholder.com/40/0b1329/f3e5ab?text=🐻🍒" alt="Icono Osito" class="nav-icon" />
+      </div>
+      <span class="nav-title">Título Tentativo</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-btn">Sección 1</a></li>
+      <li><a href="#projects" class="nav-btn">Sección 2</a></li>
+      <li><a href="#contact" class="nav-btn">Sección 3</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+
+    <!-- SECCIÓN SOBRE MÍ (Estilo Timmy O'Mahony) -->
+    <section id="about" class="hero-section">
+      <div class="hero-image-wrapper">
+        <div class="sparkle-frame">
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=500&auto=format&fit=crop" alt="Foto de perfil" class="hero-img" />
+        </div>
+      </div>
+      <div class="hero-content">
+        <blockquote class="dreamy-quote">
+          "El espacio y el tiempo abren paso a la elegancia del conocimiento." ✨
+        </blockquote>
+        <h1 class="hero-title">¿Quién soy?</h1>
+        <p class="hero-description">
+          ¡Hola! Bienvenido/a a mi espacio personal. Aquí encontrarás una muestra de mis proyectos desarrollados, investigaciones científicas, modelado matemático y mi tesis. Me apasiona integrar elegancia, lógica y estética en todo lo que creo.
+        </p>
+        
+        <!-- BOTONES DE CONTACTO Y REDES SOCIALES -->
+        <div class="contact-buttons" id="contact">
+          <a href="https://github.com/TU_USUARIO" target="_blank" rel="noopener noreferrer" class="sparkle-btn" title="GitHub">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://linkedin.com/in/TU_USUARIO" target="_blank" rel="noopener noreferrer" class="sparkle-btn" title="LinkedIn">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="mailto:tuemail@ejemplo.com" class="sparkle-btn" title="Correo">
+            <i class="fas fa-envelope"></i> Email
+          </a>
+          <a href="https://drive.google.com/file/d/TU_LINK_CV/view" target="_blank" rel="noopener noreferrer" class="sparkle-btn" title="Curriculum Vitae / Tesis">
+            <i class="fas fa-file-pdf"></i> Tesis / CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTA DE PROYECTOS / CARDS -->
+    <section id="projects" class="projects-section">
+      <h2 class="section-title">✨ Mis Trabajos e Investigaciones ✨</h2>
+      
+      <div class="cards-list">
+
+        <!-- CARD 1 -->
+        <article class="card">
+          <div class="card-media">
+            <div class="mini-carousel">
+              <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&auto=format&fit=crop" alt="Preview 1" class="carousel-img" />
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Card 1</h3>
+            <p class="card-text">
+              Descripción del proyecto 1. Puedes incluir detalles sobre tu investigación de tesis, simulaciones en MATLAB, aplicaciones full-stack o análisis de datos.
+            </p>
+            <div class="tech-tags">
+              <span class="tag">Java</span>
+              <span class="tag">MATLAB</span>
+              <span class="tag">Physics</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 2 -->
+        <article class="card">
+          <div class="card-media">
+            <div class="mini-carousel">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&auto=format&fit=crop" alt="Preview 2" class="carousel-img" />
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Card 2</h3>
+            <p class="card-text">
+              Descripción del proyecto 2. Resalta el objetivo principal, la problemática resuelta y los aprendizajes o metodologías aplicadas.
+            </p>
+            <div class="tech-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">Git</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 3 -->
+        <article class="card">
+          <div class="card-media">
+            <div class="mini-carousel">
+              <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&auto=format&fit=crop" alt="Preview 3" class="carousel-img" />
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Card 3</h3>
+            <p class="card-text">
+              Descripción del proyecto 3. Espacio para explicar el enfoque técnico y los resultados obtenidos.
+            </p>
+            <div class="tech-tags">
+              <span class="tag">Spring Boot</span>
+              <span class="tag">SQL</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- SEPARADOR INTERMEDIO: TEXTO LOREM IPSUM A LA IZQUIERDA Y IMAGEN A LA DERECHA -->
+        <div class="mid-section-wrapper">
+          <div class="mid-text-content">
+            <h3 class="mid-title">⚡ Nota de Investigación / Destacado</h3>
+            <p class="mid-lorem">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+            </p>
+          </div>
+          <div class="mid-image-container">
+            <img src="https://images.unsplash.com/photo-1517299321609-52687d1bc55a?w=400&auto=format&fit=crop" alt="Separador estético" class="square-mid-img" />
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <article class="card">
+          <div class="card-media">
+            <div class="mini-carousel">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&auto=format&fit=crop" alt="Preview 4" class="carousel-img" />
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Card 4</h3>
+            <p class="card-text">
+              Descripción del proyecto 4. Ideal para presentar un artículo, tesis o trabajo de investigación.
+            </p>
+            <div class="tech-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Data Analysis</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 5 -->
+        <article class="card">
+          <div class="card-media">
+            <div class="mini-carousel">
+              <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&auto=format&fit=crop" alt="Preview 5" class="carousel-img" />
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Card 5</h3>
+            <p class="card-text">
+              Descripción del proyecto 5. Detalles de la interfaz, arquitectura de software o experimento científico.
+            </p>
+            <div class="tech-tags">
+              <span class="tag">Bootstrap</span>
+              <span class="tag">UI/UX</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 6 -->
+        <article class="card">
+          <div class="card-media">
+            <div class="mini-carousel">
+              <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=600&auto=format&fit=crop" alt="Preview 6" class="carousel-img" />
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Card 6</h3>
+            <p class="card-text">
+              Descripción del proyecto 6. Conclusiones o logros alcanzados en este trabajo.
+            </p>
+            <div class="tech-tags">
+              <span class="tag">LaTeX</span>
+              <span class="tag">Research</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- BANNER FINAL SHARP -->
+    <div class="banner-container">
+      <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=1200&auto=format&fit=crop" alt="Banner Final" class="footer-banner" />
+      <div class="banner-overlay-text">✨ Sailor Uranus & Deep Blue Power ✨</div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>Diseñado con toque de magia y ciencia 🌙 | 2026</p>
+  </footer>
+
+  <!-- SCRIPT PARA EL EFECTO DE BRILLITOS / SPARKLES AL MOVER EL MOUSE -->
+  <script>
+    document.addEventListener('mousemove', function(e) {
+      // Crea un destello de forma aleatoria para no saturar la pantalla
+      if (Math.random() < 0.3) {
+        const sparkle = document.createElement('div');
+        sparkle.className = 'sparkle-particle';
+        
+        // Posición del cursor
+        sparkle.style.left = e.clientX + 'px';
+        sparkle.style.top = e.clientY + 'px';
+        
+        // Colores aleatorios entre Dorado Claro y Plata
+        const colors = ['#f3e5ab', '#e2e8f0', '#ffffff', '#cbd5e1'];
+        sparkle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        
+        // Tamaño aleatorio
+        const size = Math.random() * 4 + 2 + 'px';
+        sparkle.style.width = size;
+        sparkle.style.height = size;
+        
+        document.body.appendChild(sparkle);
+        
+        // Eliminar del DOM después de la animación
+        setTimeout(() => {
+          sparkle.remove();
+        }, 800);
+      }
+    });
+  </script>
+</body>
+</html>
