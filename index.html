@@ -1,247 +1,233 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Título Tentativo | Portafolio</title>
-  <!-- Fuentes Dreamy & Elegantes -->
+  <title>Anahi Matamoros | Portfolio</title>
+  <!-- Google Fonts: Cormorant Garamond (Elegante) & Montserrat (Clean) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-  <!-- Iconos para Redes Sociales -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="nav-brand">
-      <div class="icon-sparkle-wrapper">
-        <img src="https://via.placeholder.com/40/0b1329/f3e5ab?text=🐻🍒" alt="Icono Osito" class="nav-icon" />
-      </div>
-      <span class="nav-title">Título Tentativo</span>
-    </div>
-    <ul class="nav-links">
-      <li><a href="#about" class="nav-btn">Sección 1</a></li>
-      <li><a href="#projects" class="nav-btn">Sección 2</a></li>
-      <li><a href="#contact" class="nav-btn">Sección 3</a></li>
-    </ul>
-  </nav>
+  <!-- [MODIFICACIÓN DE ANCHO]: El contenedor principal gestiona la proporción 1/5 para la izquierda y 4/5 para la derecha -->
+  <div class="layout-wrapper">
 
-  <main class="container">
-
-    <!-- SECCIÓN SOBRE MÍ (Estilo Timmy O'Mahony) -->
-    <section id="about" class="hero-section">
-      <div class="hero-image-wrapper">
-        <div class="sparkle-frame">
-          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=500&auto=format&fit=crop" alt="Foto de perfil" class="hero-img" />
-        </div>
-      </div>
-      <div class="hero-content">
-        <blockquote class="dreamy-quote">
-          "El espacio y el tiempo abren paso a la elegancia del conocimiento." ✨
-        </blockquote>
-        <h1 class="hero-title">¿Quién soy?</h1>
-        <p class="hero-description">
-          ¡Hola! Bienvenido/a a mi espacio personal. Aquí encontrarás una muestra de mis proyectos desarrollados, investigaciones científicas, modelado matemático y mi tesis. Me apasiona integrar elegancia, lógica y estética en todo lo que creo.
-        </p>
+    <!-- PANEL IZQUIERDO ESTÁTICO (Ocupa aproximadamente 1/5 de la página) -->
+    <aside class="left-panel">
+      <div class="panel-content">
         
-        <!-- BOTONES DE CONTACTO Y REDES SOCIALES -->
-        <div class="contact-buttons" id="contact">
-          <a href="https://github.com/TU_USUARIO" target="_blank" rel="noopener noreferrer" class="sparkle-btn" title="GitHub">
-            <i class="fab fa-github"></i> GitHub
+        <!-- [NUEVO ESPACIO FOTO]: Contenedor circular pequeño para tu fotografía -->
+        <div class="profile-photo-container">
+          <!-- Reemplaza 'assets/me.jpg' con la ruta de tu foto de perfil real -->
+          <img src="assets/ko-pp.jpg alt="Anahi Matamoros Portrait" class="profile-photo" />
+        </div>
+
+        <h1 class="main-name">Anahi Matamoros</h1>
+        <h2 class="main-title">Applied Physicist & Java Full-Stack Developer</h2>
+        <p class="main-bio">
+          Bridging the gap between rigorous mathematical logic, optical physics simulations, and modern software architecture. Multidisciplinary scientist, bilingual interpreter, progressive drummer, and creator.
+        </p>
+
+        <!-- REDES Y CONTACTO -->
+        <div class="contact-links">
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub">
+            <i class="fab fa-github"></i>
           </a>
-          <a href="https://linkedin.com/in/TU_USUARIO" target="_blank" rel="noopener noreferrer" class="sparkle-btn" title="LinkedIn">
-            <i class="fab fa-linkedin"></i> LinkedIn
+          <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
           </a>
-          <a href="mailto:tuemail@ejemplo.com" class="sparkle-btn" title="Correo">
-            <i class="fas fa-envelope"></i> Email
+          <a href="mailto:anahimatamoroshdz@gmail.com" class="social-btn" title="Email">
+            <i class="fas fa-envelope"></i>
           </a>
-          <a href="https://drive.google.com/file/d/TU_LINK_CV/view" target="_blank" rel="noopener noreferrer" class="sparkle-btn" title="Curriculum Vitae / Tesis">
-            <i class="fas fa-file-pdf"></i> Tesis / CV
+          <a href="Anahi Matamoros Hernández.pdf" target="_blank" rel="noopener noreferrer" class="social-btn" title="CV / Thesis">
+            <i class="fas fa-file-pdf"></i>
           </a>
         </div>
       </div>
-    </section>
+    </aside>
 
-    <!-- LISTA DE PROYECTOS / CARDS -->
-    <section id="projects" class="projects-section">
-      <h2 class="section-title">✨ Mis Trabajos e Investigaciones ✨</h2>
-      
-      <div class="cards-list">
+    <!-- PANEL DERECHO CON SCROLL (Ocupa el resto del espacio para dar amplitud a las cards) -->
+    <main class="right-panel">
 
-        <!-- CARD 1 -->
-        <article class="card">
-          <div class="card-media">
-            <div class="mini-carousel">
-              <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&auto=format&fit=crop" alt="Preview 1" class="carousel-img" />
-            </div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">Card 1</h3>
-            <p class="card-text">
-              Descripción del proyecto 1. Puedes incluir detalles sobre tu investigación de tesis, simulaciones en MATLAB, aplicaciones full-stack o análisis de datos.
-            </p>
-            <div class="tech-tags">
-              <span class="tag">Java</span>
-              <span class="tag">MATLAB</span>
-              <span class="tag">Physics</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- CARD 2 -->
-        <article class="card">
-          <div class="card-media">
-            <div class="mini-carousel">
-              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&auto=format&fit=crop" alt="Preview 2" class="carousel-img" />
-            </div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">Card 2</h3>
-            <p class="card-text">
-              Descripción del proyecto 2. Resalta el objetivo principal, la problemática resuelta y los aprendizajes o metodologías aplicadas.
-            </p>
-            <div class="tech-tags">
-              <span class="tag">JavaScript</span>
-              <span class="tag">HTML/CSS</span>
-              <span class="tag">Git</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- CARD 3 -->
-        <article class="card">
-          <div class="card-media">
-            <div class="mini-carousel">
-              <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&auto=format&fit=crop" alt="Preview 3" class="carousel-img" />
-            </div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">Card 3</h3>
-            <p class="card-text">
-              Descripción del proyecto 3. Espacio para explicar el enfoque técnico y los resultados obtenidos.
-            </p>
-            <div class="tech-tags">
-              <span class="tag">Spring Boot</span>
-              <span class="tag">SQL</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- SEPARADOR INTERMEDIO: TEXTO LOREM IPSUM A LA IZQUIERDA Y IMAGEN A LA DERECHA -->
-        <div class="mid-section-wrapper">
-          <div class="mid-text-content">
-            <h3 class="mid-title">⚡ Nota de Investigación / Destacado</h3>
-            <p class="mid-lorem">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
-            </p>
-          </div>
-          <div class="mid-image-container">
-            <img src="https://images.unsplash.com/photo-1517299321609-52687d1bc55a?w=400&auto=format&fit=crop" alt="Separador estético" class="square-mid-img" />
-          </div>
+      <!-- SECCIÓN SUPERIOR: BANNER / ESTÉTICA VISUAL -->
+      <section class="about-section">
+        <div class="hero-image-container">
+          <!-- Banner con toque estético (Sailor Uranus, polar bears, blue cherries & prog rock energy) -->
+          <img src="assets/bannner.jpg" alt="Portfolio Aesthetic Banner" class="hero-img" />
         </div>
+        <div class="intro-paragraph">
+          <p>
+            Welcome to my digital space. Here, the precision of applied physics converges with full-stack web engineering, creative design, and an unstoppable rhythm. Whether modeling Bessel beam superpositions or architecting robust Java backends, I approach every challenge with analytical rigor and artistic passion.
+          </p>
+        </div>
+      </section>
 
-        <!-- CARD 4 -->
-        <article class="card">
-          <div class="card-media">
-            <div class="mini-carousel">
-              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&auto=format&fit=crop" alt="Preview 4" class="carousel-img" />
+      <!-- SECCIÓN DE PROYECTOS CON MINI CARRUSELES AMPLIADOS -->
+      <section class="projects-section">
+        <h3 class="section-heading">Featured Projects & Research</h3>
+
+        <div class="projects-list">
+
+          <!-- PROYECTO 1: TESIS / FÍSICA -->
+          <article class="project-card">
+            <div class="mini-carousel" id="carousel-1">
+              <div class="carousel-track">
+                <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=600&auto=format&fit=crop" alt="Bessel Beams Lab 1" class="carousel-slide active" />
+                <img src="https://images.unsplash.com/photo-1517299321609-52687d1bc55a?w=600&auto=format&fit=crop" alt="Bessel Beams Lab 2" class="carousel-slide" />
+              </div>
+              <button class="carousel-btn prev" onclick="moveSlide('carousel-1', -1)">&#10094;</button>
+              <button class="carousel-btn next" onclick="moveSlide('carousel-1', 1)">&#10095;</button>
             </div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">Card 4</h3>
-            <p class="card-text">
-              Descripción del proyecto 4. Ideal para presentar un artículo, tesis o trabajo de investigación.
-            </p>
-            <div class="tech-tags">
-              <span class="tag">Python</span>
-              <span class="tag">Data Analysis</span>
+
+            <div class="card-content">
+              <h4 class="card-title">Generation & Characterization of 2 to 4 Bessel Beam Superpositions</h4>
+              <p class="card-description">
+                Undergraduate thesis research (BUAP). Designed numerical MATLAB simulations and implemented a modified Michelson interferometer setup to analyze optical interference, wave propagation, and destructive interference patterns.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">MATLAB</span>
+                <span class="tag">Optics</span>
+                <span class="tag">LaTeX</span>
+                <span class="tag">Physics Research</span>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- CARD 5 -->
-        <article class="card">
-          <div class="card-media">
-            <div class="mini-carousel">
-              <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&auto=format&fit=crop" alt="Preview 5" class="carousel-img" />
+          <!-- PROYECTO 2: RUTTA E-COMMERCE -->
+          <article class="project-card">
+            <div class="mini-carousel" id="carousel-2">
+              <div class="carousel-track">
+                <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&auto=format&fit=crop" alt="Rutta Ecommerce 1" class="carousel-slide active" />
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&auto=format&fit=crop" alt="Rutta Ecommerce 2" class="carousel-slide" />
+              </div>
+              <button class="carousel-btn prev" onclick="moveSlide('carousel-2', -1)">&#10094;</button>
+              <button class="carousel-btn next" onclick="moveSlide('carousel-2', 1)">&#10095;</button>
             </div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">Card 5</h3>
-            <p class="card-text">
-              Descripción del proyecto 5. Detalles de la interfaz, arquitectura de software o experimento científico.
-            </p>
-            <div class="tech-tags">
-              <span class="tag">Bootstrap</span>
-              <span class="tag">UI/UX</span>
+
+            <div class="card-content">
+              <h4 class="card-title">Rutta — Hiking E-Commerce Platform</h4>
+              <p class="card-description">
+                Full-stack web application developed under SCRUM methodology (acting as Product Owner and developer). Features dynamic catalog filtering, shopping cart state management, RESTful APIs, and responsive design.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">Java</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Bootstrap</span>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- CARD 6 -->
-        <article class="card">
-          <div class="card-media">
-            <div class="mini-carousel">
-              <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=600&auto=format&fit=crop" alt="Preview 6" class="carousel-img" />
+          <!-- PROYECTO 3: GRYFFINDOR RESISTANCE -->
+          <article class="project-card">
+            <div class="mini-carousel" id="carousel-3">
+              <div class="carousel-track">
+                <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&auto=format&fit=crop" alt="Gryffindor Resistance 1" class="carousel-slide active" />
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&auto=format&fit=crop" alt="Gryffindor Resistance 2" class="carousel-slide" />
+              </div>
+              <button class="carousel-btn prev" onclick="moveSlide('carousel-3', -1)">&#10094;</button>
+              <button class="carousel-btn next" onclick="moveSlide('carousel-3', 1)">&#10095;</button>
             </div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">Card 6</h3>
-            <p class="card-text">
-              Descripción del proyecto 6. Conclusiones o logros alcanzados en este trabajo.
-            </p>
-            <div class="tech-tags">
-              <span class="tag">LaTeX</span>
-              <span class="tag">Research</span>
+
+            <div class="card-content">
+              <h4 class="card-title">Gryffindor-Resistance — Sorting Hat Web App</h4>
+              <p class="card-description">
+                Hackathon project. Interactive web platform simulating Hogwarts sorting mechanics and candidate evaluation based on courage and core values, built with clean frontend architecture and Git version control.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">HTML5 / CSS3</span>
+                <span class="tag">Git</span>
+                <span class="tag">UI/UX Design</span>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-      </div>
-    </section>
+          <!-- PROYECTO 4: SENSOR TCS230 -->
+          <article class="project-card">
+            <div class="mini-carousel" id="carousel-4">
+              <div class="carousel-track">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&auto=format&fit=crop" alt="Sensor TCS230 1" class="carousel-slide active" />
+                <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=600&auto=format&fit=crop" alt="Sensor TCS230 2" class="carousel-slide" />
+              </div>
+              <button class="carousel-btn prev" onclick="moveSlide('carousel-4', -1)">&#10094;</button>
+              <button class="carousel-btn next" onclick="moveSlide('carousel-4', 1)">&#10095;</button>
+            </div>
 
-    <!-- BANNER FINAL SHARP -->
-    <div class="banner-container">
-      <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=1200&auto=format&fit=crop" alt="Banner Final" class="footer-banner" />
-      <div class="banner-overlay-text">✨ Sailor Uranus & Deep Blue Power ✨</div>
-    </div>
+            <div class="card-content">
+              <h4 class="card-title">Color Sensor TCS230 Characterization with Arduino</h4>
+              <p class="card-description">
+                Experimental research project converting light-to-frequency sensor data into RGB, CMYK, and HSI color spaces, bridging hardware interaction with data normalization models.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">Arduino</span>
+                <span class="tag">Hardware Integration</span>
+                <span class="tag">Data Analysis</span>
+              </div>
+            </div>
+          </article>
 
-  </main>
+        </div>
+      </section>
 
-  <footer class="footer">
-    <p>Diseñado con toque de magia y ciencia 🌙 | 2026</p>
-  </footer>
+      <footer class="footer">
+        <p>Crafted with code, optical science, math rock rhythms & magic 🌙 | 2026</p>
+      </footer>
 
-  <!-- SCRIPT PARA EL EFECTO DE BRILLITOS / SPARKLES AL MOVER EL MOUSE -->
+    </main>
+
+  </div>
+
+  <!-- SCRIPTS: CARRUSELES Y EFECTO DE BRILLITOS -->
   <script>
+    // Lógica para mini carruseles
+    function moveSlide(carouselId, direction) {
+      const carousel = document.getElementById(carouselId);
+      const slides = carousel.querySelectorAll('.carousel-slide');
+      let activeIndex = -1;
+
+      slides.forEach((slide, index) => {
+        if (slide.classList.contains('active')) {
+          activeIndex = index;
+        }
+      });
+
+      slides[activeIndex].classList.remove('active');
+      let newIndex = activeIndex + direction;
+
+      if (newIndex >= slides.length) newIndex = 0;
+      if (newIndex < 0) newIndex = slides.length - 1;
+
+      slides[newIndex].classList.add('active');
+    }
+
+    // Efecto de cursor brillante estelar
     document.addEventListener('mousemove', function(e) {
-      // Crea un destello de forma aleatoria para no saturar la pantalla
-      if (Math.random() < 0.3) {
+      if (Math.random() < 0.6) {
         const sparkle = document.createElement('div');
         sparkle.className = 'sparkle-particle';
         
-        // Posición del cursor
         sparkle.style.left = e.clientX + 'px';
         sparkle.style.top = e.clientY + 'px';
         
-        // Colores aleatorios entre Dorado Claro y Plata
-        const colors = ['#f3e5ab', '#e2e8f0', '#ffffff', '#cbd5e1'];
+        const colors = ['#f3e5ab', '#ffffff', '#e2e8f0', '#ffd700', '#89cff0']; // Tonos dorados, blancos y azul celeste
         sparkle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
         
-        // Tamaño aleatorio
-        const size = Math.random() * 4 + 2 + 'px';
+        const size = Math.random() * 6 + 3 + 'px';
         sparkle.style.width = size;
         sparkle.style.height = size;
         
         document.body.appendChild(sparkle);
         
-        // Eliminar del DOM después de la animación
         setTimeout(() => {
           sparkle.remove();
-        }, 800);
+        }, 700);
       }
     });
   </script>
